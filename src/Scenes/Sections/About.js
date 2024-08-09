@@ -59,14 +59,14 @@ function About({ theme, setTheme, changeLanguage }) {
           <a href='https://www.linkedin.com/in/sarah-safou-a885b2122/'>
             <button class='primary-button'>{t('btn_contact_me')}</button>
           </a>
-          <a
+          {/* <a
           // href={process.env.PUBLIC_URL + '/documents/CV.pdf'}
           // download='SAFOU_SARAH_CV'
           // target='_blank'
           // rel='noopener noreferrer'
-          >
-            <button class='secondary-button'>{t('btn_download_resume')}</button>
-          </a>
+          > */}
+          <button class='secondary-button'>{t('btn_download_resume')}</button>
+          {/* </a> */}
         </div>
         <div class='container-icon'>
           <i class='fa-brands fa-angular fa-2xl'></i>
