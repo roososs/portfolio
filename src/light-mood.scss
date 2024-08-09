@@ -1,0 +1,154 @@
+/*light*/
+$primary-color: #0057ff;
+$primary-color-hover: #034cd9;
+$primary-color-border: 1px solid #0057ff;
+$secondary-color: #fff;
+$secondary-color-border: 1px solid #e8e8e8;
+$third-color: #050212;
+$first-text-color: #000;
+$second-text-color: #191919;
+$third-text-color: dimgray;
+
+.light-theme{ 
+    background-color: $secondary-color;
+    color: $first-text-color;
+}
+
+.light-theme nav{ 
+    background-color: $third-color;
+    ul{ 
+      li{ 
+        color: $secondary-color;
+        border-right: 1px solid $secondary-color;
+      }
+    }
+}
+
+.light-theme .primary-button{ 
+    background-color: $primary-color;
+    color: #fff;  
+    border: $primary-color-border;
+    &:hover{
+      background-color: $primary-color-hover;
+    }
+}
+  
+.light-theme .secondary-button{ 
+    background-color:  #fff;
+    color: $second-text-color;
+    border: 1px solid #e8e8e8;
+    &:hover{
+      background-color: #eee;
+    }
+}
+
+.light-theme .badge.light{ 
+    background-color: #f9f8f8;
+    color: $primary-color;
+}
+
+.light-theme .container{
+    border-bottom: $secondary-color-border;
+}
+
+.light-theme .card{
+    border: $primary-color-border;
+}
+  
+.light-theme .card.full{
+    background-color: $primary-color;
+    color: #fff;
+    &:hover{
+      background-color: $primary-color-hover;
+    }
+}
+  
+.light-theme .card.empty{
+    background-color: transparent;
+    color: $primary-color;
+    &:hover{
+      background-color: #eee;
+    }
+}
+
+.light-theme section .header{
+    p{
+      color: $third-text-color;
+    }
+}
+
+.light-theme #about{
+    .container.top{
+        color: $third-color;
+        .owner-name{
+          color: $third-text-color;
+        }
+     }
+    .container.bottom{
+        .header{
+            p{
+              color: $third-text-color;
+            }
+        }
+       .container-icon{
+           color: $primary-color;
+        }
+     }
+}
+
+.light-theme #experiences-educations{
+    .container-icon{
+       color: $primary-color;
+    } 
+    .skills-category{
+      color: $third-text-color;
+    }
+}
+  
+.light-theme footer{
+    .top{
+      .beetwen-button{
+        color: $third-text-color; 
+      }
+      p{
+        color: $third-text-color; 
+      }
+      .cont-txt{
+        span{
+          color: $third-color;
+        }
+      }
+    }
+  }
+  
+.light-theme .timeline-area{
+    border-left: 3px solid $primary-color;
+    > div{
+      .date{
+        color: $third-text-color;
+      }
+      .fst-txt{
+        color: $primary-color;
+      }
+      .snd-txt{
+        color: $first-text-color;
+      }
+      .description{
+        color: $third-text-color;
+      } 
+    }
+    > div:before{
+      content: '';
+      background-color: $secondary-color;
+      border: 3px solid $primary-color;
+    }
+}
+
+.light-theme .mini-badge{
+  background-color: $primary-color;
+}
+
+.light-theme .switch-color{ 
+  color: $secondary-color ;
+  background-color: $primary-color;
+}
