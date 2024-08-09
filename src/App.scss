@@ -125,7 +125,7 @@ section .header{
 #about{
   .row-switch{
     display:flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding-top: 20px;
     align-items: center;
     > div{
