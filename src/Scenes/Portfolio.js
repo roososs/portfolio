@@ -8,7 +8,7 @@ import '../dark-mood.scss'
 import '../light-mood.scss'
 
 function Portfolio({ changeLanguage }) {
-  const [theme, setTheme] = useState('dark-theme')
+  const [theme, setTheme] = useState('light-theme')
   useEffect(() => {
     const script = document.createElement('script')
     script.src = 'https://kit.fontawesome.com/78cbd56b65.js'

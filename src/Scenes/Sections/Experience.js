@@ -137,14 +137,14 @@ function Experience() {
             <span>API Rest</span>
           </div>
         </div>
-        <div>
+        {/* <div>
           <span class='skills-category'>Devops</span>
           <div>
             <span>Docker,</span>
             <span>Kubernetes,</span>
             <span>Jenkins</span>
           </div>
-        </div>
+        </div> */}
         <div>
           <span class='skills-category'>Base De données</span>
           <div>

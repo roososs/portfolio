@@ -18,10 +18,10 @@ function Contact() {
           }}
         >
           <a
-            href={process.env.PUBLIC_URL + '/documents/CV.pdf'}
-            download='SAFOU_SARAH_CV'
-            target='_blank'
-            rel='noopener noreferrer'
+          // href={process.env.PUBLIC_URL + '/documents/CV.pdf'}
+          // download='SAFOU_SARAH_CV'
+          // target='_blank'
+          // rel='noopener noreferrer'
           >
             <button class='secondary-button'>{t('btn_download_resume')}</button>
           </a>
