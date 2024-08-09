@@ -1,0 +1,18 @@
+{
+    "greeting": "Bonjour, je suis développeuse web",
+    "introduction": "je suis une développeuse web dévouée avec une passion pour la création d'applications web dynamiques et réactives. Avec des années d'expérience dans l'industrie, j'ai perfectionné mes compétences en développement front-end et back-end, garantissant des expériences utilisateur fluides et des fonctionnalités robustes.",
+    "projects_title": "Quels projets ai-je réalisés ?",
+    "projects_description":"Ces dernières années, j'ai contribué à une gamme variée de projets qui mettent en valeur mes compétences et ma polyvalence. Ces projets couvrent divers secteurs et technologies, reflétant ma capacité à m'adapter et à innover", 
+    "experiences_education":"Expériences & Formation",
+    "skills":"Compétences",
+    "contact_title": "Vous souhaitez rester en contact ?",
+    "contact_description": "Je suis toujours ouvert à discuter de nouveaux projets, d'idées créatives ou d'opportunités de faire partie de vos visions",
+    "btn_download_resume":"Téléchargez Mon CV",
+    "btn_connect_linkdin":"Retrouvez moi sur linkedin",
+    "btn_contact_me":"Contactez Moi",
+    "go_to_project":"Voir le projet",
+    "more_projects":"Retrouvez plus de projets",
+    "dark_mode":"Mode Sombre",
+    "light_mode":"Mode Clair",
+    "copyright":"© 2022 SAFOU Sarah. Tous droits réservés."
+}

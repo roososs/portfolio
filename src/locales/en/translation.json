@@ -1,0 +1,18 @@
+{
+    "greeting": "Hi, Im Web Developer",
+    "introduction": "I'm a dedicated web developer with a passion for creating dynamic and responsive web applications. With years of experience in the industry, I have honed my skills in front-end and back-end development, ensuring seamless user experiences and robust functionalities",
+    "projects_title": "What projects have I worked on?",
+    "projects_description":"In recent years, I have contributed to a diverse range of projects that showcase my skills and versatility. These projects span various industries and technologies, reflecting my ability to adapt and innovate", 
+    "experiences_education":"Experiences & Education",
+    "skills":"Skills",
+    "contact_title": "Do you want to contact me?",
+    "contact_description": "I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me through any of the following methods.",
+    "btn_download_resume":"Download My Resume",
+    "btn_connect_linkdin":"Connect with Me on LinkedIn",
+    "btn_contact_me":"Contact Me",
+    "go_to_project":"Go to project",
+    "more_projects":"Find More Projects",
+    "dark_mode":"Dark Mode",
+    "light_mode":"Light Mode",
+    "copyright":"© 2022 SAFOU Sarah. All rights reserved."
+}
