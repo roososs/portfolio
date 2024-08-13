@@ -1,11 +1,18 @@
 import { useTranslation } from 'react-i18next'
-import { dataEducations, dataExperiences, dataTechnologies } from '../data'
+import {
+  dataEducations,
+  dataExperiences,
+  dataTechnologies,
+  dataSkills,
+} from '../data'
 
 function Experience() {
   const { t, i18n } = useTranslation()
   const language = i18n.language
   const educations = dataEducations[language] || []
   const experiences = dataExperiences[language] || []
+  const skills = dataSkills[language] || []
+
   return (
     <section id='experiences-educations'>
       <div className='container'>
@@ -75,49 +82,20 @@ function Experience() {
             return <i className={`fa-brands ${technology.icon} fa-2xl`}></i>
           })}
         </div>
-        <div>
-          <span className='skills-category'>Front-end</span>
-          <div>
-            <span>HTML,</span>
-            <span>CSS,</span>
-            <span>Javascript</span>
-          </div>
-        </div>
-        <div>
-          <span className='skills-category'>Back-end</span>
-          <div>
-            <span>PHP,</span>
-            <span>Java,</span>
-            <span>Spring Boot,</span>
-            <span>JHipster,</span>
-            <span>Microservices,</span>
-            <span>API Rest</span>
-          </div>
-        </div>
-        {/* <div>
-          <span className='skills-category'>Devops</span>
-          <div>
-            <span>Docker,</span>
-            <span>Kubernetes,</span>
-            <span>Jenkins</span>
-          </div>
-        </div> */}
-        <div>
-          <span className='skills-category'>Base De données</span>
-          <div>
-            <span>My SQL,</span>
-            <span>PostgreSQL</span>
-          </div>
-        </div>
-        <div>
-          <span className='skills-category'>Autre</span>
-          <div>
-            <span>Figma,</span>
-            <span>Scrum,</span>
-            <span>Git,</span>
-            <span>GitLab</span>
-          </div>
-        </div>
+        <>
+          {skills.map((skill) => {
+            return (
+              <div>
+                <span className='skills-category'>{skill.title}</span>
+                <div>
+                  {skill.technologies.map((technology) => {
+                    return <span>{technology}</span>
+                  })}
+                </div>
+              </div>
+            )
+          })}
+        </>
       </div>
     </section>
   )
