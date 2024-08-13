@@ -5,6 +5,7 @@ import {
   dataTechnologies,
   dataSkills,
 } from '../data'
+import { Timeline } from '../components'
 
 function Experience() {
   const { t, i18n } = useTranslation()
@@ -22,54 +23,10 @@ function Experience() {
         </div>
         <div className='content'>
           <div className='educations'>
-            <div className='timeline-area'>
-              {educations.map((education) => {
-                return (
-                  <div key={education.id}>
-                    <span className='date'>{education.date}</span>
-                    <div className='row-txt'>
-                      <span className='fst-txt'>{education.primaryTitle}</span>
-                      <span className='snd-txt'>
-                        {education.secondaryTitle}
-                      </span>
-                    </div>
-                    <span className='description'>{education.description}</span>
-                    <span
-                      className='mini-badge award'
-                      href={education.awardsLink}
-                    >
-                      View Awards
-                    </span>
-                  </div>
-                )
-              })}
-            </div>
+            <Timeline elements={educations} />
           </div>
           <div className='experiences'>
-            <div className='timeline-area'>
-              {experiences.map((experience) => {
-                return (
-                  <div key={experience.id}>
-                    <span className='date'>{experience.date}</span>
-                    <div className='row-txt'>
-                      <span className='fst-txt'>{experience.primaryTitle}</span>
-                      <span className='snd-txt'>
-                        {experience.secondaryTitle}
-                      </span>
-                    </div>
-                    <span className='description'>
-                      {experience.description}
-                    </span>
-                    <span
-                      className='mini-badge award'
-                      href={experience.awardsLink}
-                    >
-                      View Awards
-                    </span>
-                  </div>
-                )
-              })}
-            </div>
+            <Timeline elements={experiences} />
           </div>
         </div>
         <br />
