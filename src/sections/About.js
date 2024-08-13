@@ -1,7 +1,11 @@
 import { useTranslation } from 'react-i18next'
+import { IconList } from '../components'
+import { dataTechnologies } from '../data'
 
 function About({ theme, setTheme, changeLanguage }) {
   const { t, i18n } = useTranslation()
+  const language = i18n.language
+  const technologies = dataTechnologies[language] || []
   return (
     <section id='about'>
       <div class='row-switch'>
@@ -9,9 +13,7 @@ function About({ theme, setTheme, changeLanguage }) {
           <div
             className='switch-lg'
             onClick={() =>
-              i18n.language === 'en'
-                ? changeLanguage('fr')
-                : changeLanguage('en')
+              language === 'en' ? changeLanguage('fr') : changeLanguage('en')
             }
           >
             <i class='fa-solid fa-language'></i>
@@ -68,20 +70,9 @@ function About({ theme, setTheme, changeLanguage }) {
           <button class='secondary-button'>{t('btn_download_resume')}</button>
           {/* </a> */}
         </div>
-        <div class='container-icon'>
-          <i class='fa-brands fa-angular fa-2xl'></i>
-          <i class='fa-brands fa-html5 fa-2xl'></i>
-          <i class='fa-brands fa-css3-alt fa-2xl'></i>
-          <i class='fa-brands fa-java fa-2xl'></i>
-          <i class='fa-brands fa-js-square fa-2xl'></i>
-          <i class='fa-brands fa-php fa-2xl'></i>
-          <i class='fa-brands fa-react fa-2xl'></i>
-          <i class='fa-brands fa-figma fa-2xl'></i>
-          <i class='fa-brands fa-git-alt fa-2xl'></i>
-          <i class='fa-brands fa-github fa-2xl'></i>
-          <i class='fa-brands fa-gitlab fa-2xl'></i>
-          <i class='fa-brands fa-docker fa-2xl'></i>
-        </div>
+        <>
+          <IconList icons={technologies} />
+        </>
       </div>
     </section>
   )
