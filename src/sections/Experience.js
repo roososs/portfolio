@@ -5,7 +5,7 @@ import {
   dataTechnologies,
   dataSkills,
 } from '../data'
-import { Timeline } from '../components'
+import { Timeline, IconList } from '../components'
 
 function Experience() {
   const { t, i18n } = useTranslation()
@@ -35,11 +35,9 @@ function Experience() {
         <div className='header'>
           <span className='big-title'>{t('skills')}</span>
         </div>
-        <div className='container-icon'>
-          {technologies.map((technology) => {
-            return <i className={`fa-brands ${technology.icon} fa-2xl`}></i>
-          })}
-        </div>
+        <>
+          <IconList icons={technologies} />
+        </>
         <>
           {skills.map((skill) => {
             return (
