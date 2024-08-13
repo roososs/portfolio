@@ -5,7 +5,7 @@ import {
   dataTechnologies,
   dataSkills,
 } from '../data'
-import { Timeline, IconList } from '../components'
+import { Timeline, IconList, EnumList } from '../components'
 
 function Experience() {
   const { t, i18n } = useTranslation()
@@ -39,18 +39,7 @@ function Experience() {
           <IconList icons={technologies} />
         </>
         <>
-          {skills.map((skill) => {
-            return (
-              <div>
-                <span className='skills-category'>{skill.title}</span>
-                <div>
-                  {skill.technologies.map((technology) => {
-                    return <span>{technology}</span>
-                  })}
-                </div>
-              </div>
-            )
-          })}
+          <EnumList elements={skills} />
         </>
       </div>
     </section>
