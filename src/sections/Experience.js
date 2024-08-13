@@ -12,6 +12,7 @@ function Experience() {
   const educations = dataEducations[language] || []
   const experiences = dataExperiences[language] || []
   const skills = dataSkills[language] || []
+  const technologies = dataTechnologies[language] || []
 
   return (
     <section id='experiences-educations'>
@@ -78,7 +79,7 @@ function Experience() {
           <span className='big-title'>{t('skills')}</span>
         </div>
         <div className='container-icon'>
-          {dataTechnologies.map((technology) => {
+          {technologies.map((technology) => {
             return <i className={`fa-brands ${technology.icon} fa-2xl`}></i>
           })}
         </div>
