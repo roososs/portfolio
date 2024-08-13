@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import Portfolio from './Scenes/Portfolio'
+import { Portfolio } from './pages'
 
 function App() {
   const { i18n } = useTranslation()
