@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next'
-import dataEducation from '../data/dataEducation'
+import dataEducation from '../data/dataEducations'
+import dataExperience from '../data/dataExperiences'
 
 function Experience() {
   const { t, i18n } = useTranslation()
   const language = i18n.language
   const educations = dataEducation[language] || []
+  const experiences = dataExperience[language] || []
   return (
     <section id='experiences-educations'>
       <div className='container'>
@@ -38,42 +40,28 @@ function Experience() {
           </div>
           <div className='experiences'>
             <div className='timeline-area'>
-              <div>
-                <span className='date'>MAI 2022 / AVRIL 2024</span>
-                <div className='row-txt'>
-                  <span className='fst-txt'>Web developer, </span>
-                  <span className='snd-txt'>KPMG</span>
-                </div>
-                <span className='description'>
-                  Développement front-end, conception d'API REST, méthodologie
-                  Scrum, et utilisation des outils de gestion de version Git et
-                  Microsoft Azure.
-                </span>
-              </div>
-              <div>
-                <span className='date'>DECEMBRE 2018 / FEVRIER 2022</span>
-                <div className='row-txt'>
-                  <span className='fst-txt'>
-                    Ingénieure d'études et de Developement,{' '}
-                  </span>
-                  <span className='snd-txt'>Tamarisoft</span>
-                </div>
-                <span className='description'>
-                  Développement front-end et back-end, conception d'API REST,
-                  méthodologie Scrum, utilisation des outils de gestion de
-                  version Git et GitLab, et développement de portails Liferay.
-                </span>
-              </div>
-              <div>
-                <span className='date'>NOVEMBRE 2018 / DECEMBRE 2018</span>
-                <div className='row-txt'>
-                  <span className='fst-txt'>Stage Pratique, </span>
-                  <span className='snd-txt'>Tamarisoft Ex SSTI</span>
-                </div>
-                <span className='description'>
-                  Initiation et développement de portails Liferay
-                </span>
-              </div>
+              {experiences.map((experience) => {
+                return (
+                  <div key={experience.id}>
+                    <span className='date'>{experience.date}</span>
+                    <div className='row-txt'>
+                      <span className='fst-txt'>{experience.primaryTitle}</span>
+                      <span className='snd-txt'>
+                        {experience.secondaryTitle}
+                      </span>
+                    </div>
+                    <span className='description'>
+                      {experience.description}
+                    </span>
+                    <span
+                      className='mini-badge award'
+                      href={experience.awardsLink}
+                    >
+                      View Awards
+                    </span>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
