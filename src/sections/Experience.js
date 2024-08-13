@@ -1,12 +1,11 @@
 import { useTranslation } from 'react-i18next'
-import dataEducation from '../data/dataEducations'
-import dataExperience from '../data/dataExperiences'
+import { dataEducations, dataExperiences } from '../data'
 
 function Experience() {
   const { t, i18n } = useTranslation()
   const language = i18n.language
-  const educations = dataEducation[language] || []
-  const experiences = dataExperience[language] || []
+  const educations = dataEducations[language] || []
+  const experiences = dataExperiences[language] || []
   return (
     <section id='experiences-educations'>
       <div className='container'>

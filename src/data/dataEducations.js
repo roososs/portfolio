@@ -1,4 +1,4 @@
-const dataEducation = {
+const dataEducations = {
   en: [
     {
       id: 1,
@@ -74,4 +74,4 @@ const dataEducation = {
     },
   ],
 }
-export default dataEducation
+export default dataEducations

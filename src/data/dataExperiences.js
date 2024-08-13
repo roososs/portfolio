@@ -1,4 +1,4 @@
-const dataExperience = {
+const dataExperiences = {
   en: [
     {
       id: 1,
@@ -56,4 +56,4 @@ const dataExperience = {
     },
   ],
 }
-export default dataExperience
+export default dataExperiences
