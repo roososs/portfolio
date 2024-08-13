@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import dataProjects from '../data/dataProjects'
+import { dataProjects } from '../data'
 
 function Projects() {
   const { t, i18n } = useTranslation()
