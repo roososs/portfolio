@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import About from './Sections/About'
-import Contact from './Sections/Contact'
-import Experience from './Sections/Experience'
-import Projects from './Sections/Projects'
-import '../App.scss'
-import '../dark-mood.scss'
-import '../light-mood.scss'
+import { About, Contact, Experience, Projects } from '../sections'
 
 function Portfolio({ changeLanguage }) {
   const [theme, setTheme] = useState('light-theme')
