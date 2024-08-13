@@ -176,6 +176,9 @@ section .header{
 
 #projects{
   .content{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
     padding-top: 1rem;
     padding-bottom: 3rem;
     > div{
