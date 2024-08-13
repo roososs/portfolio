@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { dataEducations, dataExperiences } from '../data'
+import { dataEducations, dataExperiences, dataTechnologies } from '../data'
 
 function Experience() {
   const { t, i18n } = useTranslation()
@@ -71,18 +71,9 @@ function Experience() {
           <span className='big-title'>{t('skills')}</span>
         </div>
         <div className='container-icon'>
-          <i className='fa-brands fa-angular fa-2xl'></i>
-          <i className='fa-brands fa-html5 fa-2xl'></i>
-          <i className='fa-brands fa-css3-alt fa-2xl'></i>
-          <i className='fa-brands fa-java fa-2xl'></i>
-          <i className='fa-brands fa-js-square fa-2xl'></i>
-          <i className='fa-brands fa-php fa-2xl'></i>
-          <i className='fa-brands fa-react fa-2xl'></i>
-          <i className='fa-brands fa-figma fa-2xl'></i>
-          <i className='fa-brands fa-git-alt fa-2xl'></i>
-          <i className='fa-brands fa-github fa-2xl'></i>
-          <i className='fa-brands fa-gitlab fa-2xl'></i>
-          <i className='fa-brands fa-docker fa-2xl'></i>
+          {dataTechnologies.map((technology) => {
+            return <i className={`fa-brands ${technology.icon} fa-2xl`}></i>
+          })}
         </div>
         <div>
           <span className='skills-category'>Front-end</span>
