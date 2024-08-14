@@ -32,8 +32,7 @@ function About({ theme, setTheme, changeLanguage }) {
                 <i
                   class='fa-solid fa-sun'
                   style={{ marginRight: '5px', marginLeft: '5px' }}
-                ></i>{' '}
-                {/* {t('light_mode')} */}
+                ></i>
               </>
             ) : (
               <>
@@ -41,7 +40,6 @@ function About({ theme, setTheme, changeLanguage }) {
                   class='fa-solid fa-moon'
                   style={{ marginRight: '5px', marginLeft: '5px' }}
                 ></i>
-                {/* {t('dark_mode')} */}
               </>
             )}
           </span>

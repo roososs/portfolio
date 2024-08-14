@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { About, Contact, Experience, Projects } from '../sections'
+import { useScript } from '../hooks'
 
 function Portfolio({ changeLanguage }) {
   const [theme, setTheme] = useState('light-theme')
-  useEffect(() => {
-    const script = document.createElement('script')
-    script.src = 'https://kit.fontawesome.com/78cbd56b65.js'
-    script.async = true
-    document.body.appendChild(script)
-    return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
+  useScript('https://kit.fontawesome.com/78cbd56b65.js')
   return (
     <div className={theme}>
       <About
