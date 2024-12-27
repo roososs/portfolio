@@ -48,7 +48,7 @@ function About({ theme, setTheme, changeLanguage }) {
 
       <div class='container top'>
         <span>Portfolio.</span>
-        <span class='owner-name'>SAFOU Sarah Meriem</span>
+        <span class='owner-name'>SAFOU Sarah</span>
       </div>
       <div class='container bottom'>
         <div class='header'>

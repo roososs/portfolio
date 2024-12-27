@@ -39,16 +39,16 @@ const dataProjects = {
   fr: [
     {
       id: 1,
-      title: 'Authentication App With React',
-      description: 'https://github.com/roososs/basic-spring-boot-app',
-      link: '#',
+      title: 'Basic spring boot application',
+      description: 'Spring boot',
+      link: 'https://github.com/roososs/basic-spring-boot-app',
       style: 'full',
     },
     {
       id: 2,
-      title: 'Dynamic CV',
-      description: 'https://github.com/roososs/portfolio',
-      link: '#',
+      title: 'Portfolio',
+      description: 'React, Javascript, HTML, CSS',
+      link: 'https://github.com/roososs/portfolio',
       style: 'empty',
     },
     // {
