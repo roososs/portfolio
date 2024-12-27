@@ -13,9 +13,9 @@ function Timline({ elements }) {
               <span className='snd-txt'>{element.secondaryTitle}</span>
             </div>
             <span className='description'>{element.description}</span>
-            <span className='mini-badge award' href={element.awardsLink}>
+            {/* <span className='mini-badge award' href={element.awardsLink}>
               {t('view_awards')}
-            </span>
+            </span> */}
           </div>
         )
       })}

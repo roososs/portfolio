@@ -2,28 +2,28 @@ const dataEducations = {
   en: [
     {
       id: 1,
-      date: 'AOUT 2018 / NOVEMBER 2018',
+      date: 'AOUT 2018 - NOVEMBER 2018',
       primaryTitle: 'Formation en ligne, ',
       secondaryTitle: 'ONE MILLION ARABCODERS ',
-      description: 'Front-End Developer track',
+      description: 'Frontend Developer track',
       awardsLink: '#',
     },
     {
       id: 2,
-      date: 'SEPTEMBRE 2016 / JUIN 2018',
-      primaryTitle: 'Master en ingénierie Logiciels, ',
+      date: 'SEPTEMBRE 2016 - JUIN 2018',
+      primaryTitle: 'Master en Ingénierie Logiciels, ',
       secondaryTitle:
-        'Univesité Des Sciences et de LA Technologie Houari Boumedienne USTHB',
+        'Université des Sciences et de la Technologie Houari-Boumédiène (USTHB)',
       description: '',
       awardsLink: '',
     },
     {
       id: 3,
-      date: 'SEPTEMBRE 2012 / JUIN 2016',
+      date: 'SEPTEMBRE 2012 - JUIN 2016',
       primaryTitle:
         'Licence en Ingénierie des Systèmes d’Information et Logiciels, ',
       secondaryTitle:
-        'Univesité Des Sciences et de LA Technologie Houari Boumedienne USTHB',
+        'Université des Sciences et de la Technologie Houari-Boumédiène (USTHB)',
       description: '',
       awardsLink: '',
     },
@@ -39,28 +39,28 @@ const dataEducations = {
   fr: [
     {
       id: 1,
-      date: 'AOUT 2018 / NOVEMBER 2018',
+      date: 'AOUT 2018 - NOVEMBER 2018',
       primaryTitle: 'Formation en ligne, ',
       secondaryTitle: 'ONE MILLION ARABCODERS ',
-      description: 'Front-End Developer track',
+      description: 'Frontend Developer track',
       awardsLink: '#',
     },
     {
       id: 2,
-      date: 'SEPTEMBRE 2016 / JUIN 2018',
-      primaryTitle: 'Master en ingénierie Logiciels, ',
+      date: 'SEPTEMBRE 2016 - JUIN 2018',
+      primaryTitle: 'Master en Ingénierie Logiciels, ',
       secondaryTitle:
-        'Univesité Des Sciences et de LA Technologie Houari Boumedienne USTHB',
+        'Université des Sciences et de la Technologie Houari-Boumédiène (USTHB)',
       description: '',
       awardsLink: '',
     },
     {
       id: 3,
-      date: 'SEPTEMBRE 2012 / JUIN 2016',
+      date: 'SEPTEMBRE 2012 - JUIN 2016',
       primaryTitle:
         'Licence en Ingénierie des Systèmes d’Information et Logiciels, ',
       secondaryTitle:
-        'Univesité Des Sciences et de LA Technologie Houari Boumedienne USTHB',
+        'Université des Sciences et de la Technologie Houari-Boumédiène (USTHB)',
       description: '',
       awardsLink: '',
     },

@@ -16,13 +16,13 @@ function Projects() {
         <div className='content'>
           {projects.map((project) => {
             return (
-              <div key={project.id} className={`card ${project.style}`}>
-                <span className='title'>{project.title}</span>
-                <p>{project.description}</p>
-                <span className='link' href={project.link}>
-                  {t('go_to_project')}
-                </span>
-              </div>
+              <a href={project.link} target='_blank'>
+                <div key={project.id} className={`card ${project.style}`}>
+                  <span className='title'>{project.title}</span>
+                  <p>{project.description}</p>
+                  <span className='link'>{t('go_to_project')}</span>
+                </div>
+              </a>
             )
           })}
           <div className='card empty final'>
