@@ -20,7 +20,7 @@ const dataExperiences = {
     },
     {
       id: 3,
-      date: 'DECEMBRE 2018 - FEVRIER 2022',
+      date: 'MARS 2019 – FÉVRIER 2022',
       primaryTitle: "Ingénieure d'Études et de Développement, ",
       secondaryTitle: 'Tamarisoft',
       description:
@@ -29,7 +29,7 @@ const dataExperiences = {
     },
     {
       id: 4,
-      date: 'NOVEMBRE 2018 - DECEMBRE 2018',
+      date: 'NOVEMBRE 2018 – FÉVRIER 2019',
       primaryTitle: 'Stage Pratique, ',
       secondaryTitle: 'Tamarisoft Ex SSTI',
       description: 'Initiation et développement de portails Liferay',
@@ -57,7 +57,7 @@ const dataExperiences = {
     },
     {
       id: 3,
-      date: 'DECEMBRE 2018 - FEVRIER 2022',
+      date: 'MARS 2019 – FÉVRIER 2022',
       primaryTitle: "Ingénieure d'Études et de Développement, ",
       secondaryTitle: 'Tamarisoft',
       description:
@@ -66,7 +66,7 @@ const dataExperiences = {
     },
     {
       id: 4,
-      date: 'NOVEMBRE 2018 - DECEMBRE 2018',
+      date: 'NOVEMBRE 2018 – FÉVRIER 2019',
       primaryTitle: 'Stage Pratique, ',
       secondaryTitle: 'Tamarisoft Ex SSTI',
       description: 'Initiation et développement de portails Liferay',
