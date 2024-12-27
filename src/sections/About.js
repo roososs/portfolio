@@ -56,17 +56,20 @@ function About({ theme, setTheme, changeLanguage }) {
           <br />
           <p>{t('introduction')}</p>
           <br />
-          <a href='https://www.linkedin.com/in/sarah-safou-a885b2122/'>
+          <a
+            href='https://www.linkedin.com/in/sarah-safou-a885b2122/'
+            target='_blank'
+          >
             <button class='primary-button'>{t('btn_contact_me')}</button>
           </a>
-          {/* <a
-          // href={process.env.PUBLIC_URL + '/documents/CV.pdf'}
-          // download='SAFOU_SARAH_CV'
-          // target='_blank'
-          // rel='noopener noreferrer'
-          > */}
-          <button class='secondary-button'>{t('btn_download_resume')}</button>
-          {/* </a> */}
+          <a
+            href={process.env.PUBLIC_URL + '/documents/CV.pdf'}
+            download='SAFOU_SARAH_CV'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <button class='secondary-button'>{t('btn_download_resume')}</button>
+          </a>
         </div>
         <>
           <IconList icons={technologies} />

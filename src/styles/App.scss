@@ -181,11 +181,14 @@ section .header{
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 3rem;
-    > div{
+    >a{
+      text-decoration: none; 
+      > div {
       display:flex;
       justify-content:center;
       flex-wrap: wrap;
-    }
+      }
+    }     
   }
 }
 
